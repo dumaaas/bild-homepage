@@ -36,13 +36,13 @@ npm install
 ### Tablet
 
 * header - TBD
-* main - 40 minutes
-* footer - TBD
+* main - 43 minutes
+* footer - 2 minutes
 
 ### Mobile
 
 * header - TBD
-* main - 30 m inutes
+* main - TBD
 * footer - TBD
 
 ## 📝 Text editor
