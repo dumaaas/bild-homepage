@@ -20,11 +20,18 @@ npm install
 
 ## 🏃 Speedrun
 
-### Laptop/desktop screens
+### Desktop screens (3 hours and 10 minutes)
 
 * header - 17 minutes
 * main - 2 hours and 30 minutes
 * footer - 23 minutes
+
+### Laptop (42 minutes)
+
+* header - 1 minute
+* main - 40 minutes
+* footer - 1 minute
+
 
 ### Tablet
 
