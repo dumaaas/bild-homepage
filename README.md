@@ -22,7 +22,7 @@ npm install
 
 * header - 17 minutes
 * main - 2 hours and 30 minutes
-* section - TBD
+* footer - TBD
 
 ## 📝 Text editor
 
