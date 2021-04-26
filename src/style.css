@@ -104,13 +104,37 @@
 
 .client-section {
     background-position: 0px 0px;
-
 	animation: animatedBackground 10s linear infinite;
 	-moz-animation: animatedBackground 10s linear infinite;
 	-webkit-animation: animatedBackground 10s linear infinite;
 	-ms-animation: animatedBackground 10s linear infinite;
 	-o-animation: animatedBackground 10s linear infinite;
     background-image: url('../images/clients-cover.jpg');
+}
+
+.home-btns:hover .svg-icon {
+    transform: translateX(5px);
+}
+
+.svg-icon {
+    width: 19px;
+    height: 19px;
+    fill: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 22px; 
+    -webkit-transition: -webkit-transform ease 0.2s;
+    transition: -webkit-transform ease 0.2s;
+    transition: transform ease 0.2s;
+    transition: transform ease 0.2s,-webkit-transform ease 0.2s;
+}
+
+.wavy-link:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 10px;
+    background-repeat: repeat-x;
 }
 
 
