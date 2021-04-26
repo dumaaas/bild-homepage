@@ -20,8 +20,22 @@ npm install
 
 ## 🏃 Speedrun
 
+### Laptop/desktop screens
+
 * header - 17 minutes
 * main - 2 hours and 30 minutes
+* footer - 23 minutes
+
+### Tablet
+
+* header - TBD
+* main - TBD
+* footer - TBD
+
+### Mobile
+
+* header - TBD
+* main - TBD
 * footer - TBD
 
 ## 📝 Text editor
