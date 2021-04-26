@@ -1,0 +1,150 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/roboto/roboto.eot');
+    /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto/roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto/roboto.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto/roboto.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto/roboto.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto/roboto.svg#Roboto') format('svg');
+    /* Legacy iOS */
+}
+
+
+/* noto-sans-regular - latin-ext_latin_cyrillic-ext_cyrillic */
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/noto-sans-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Noto Sans'), local('NotoSans'), url('../fonts/noto-sans/noto-sans-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/noto-sans/noto-sans-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/noto-sans/noto-sans-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/noto-sans/noto-sans-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/noto-sans/noto-sans-regular.svg#NotoSans') format('svg');
+    /* Legacy iOS */
+}
+
+
+/* noto-sans-700 - latin-ext_latin_cyrillic-ext_cyrillic */
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/noto-sans-700.eot');
+    /* IE9 Compat Modes */
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('../fonts/noto-sans-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/noto-sans-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/noto-sans-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/noto-sans-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/noto-sans-700.svg#NotoSans') format('svg');
+    /* Legacy iOS */
+}
+
+@import url("//hello.myfonts.net/count/3ce04c");
+@font-face {
+    font-family: 'GalanoGrotesque-Bold';
+    font-display: swap;
+    src: url('../fonts/GalanoGrotesque-Bold/font.woff2') format('woff2'), url('../fonts/GalanoGrotesque-Bold/font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque-Medium';
+    font-display: swap;
+    src: url('../fonts/GalanoGrotesque-Medium/font.woff2') format('woff2'), url('../fonts/GalanoGrotesque-Medium/font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque-Regular';
+    font-display: swap;
+    src: url('../fonts/GalanoGrotesque-Regular/font.woff2') format('woff2'), url('../fonts/GalanoGrotesque-Regular/font.woff') format('woff');
+}
+
+.nilex-section {
+    background-image: url('../images/nilex-cover.jpg');    
+}
+
+.galano-medium {
+    font-family: 'GalanoGrotesque-Medium';
+}
+
+.background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.telekom-section {
+    background-image: url('../images/telekom-cover.jpg');
+}
+
+.yoga-section {
+    background-image: url('../images/yoga-cover.jpg');
+}
+.note-section {
+    background-image: url('../images/note-cover.jpg');
+}
+
+.client-section {
+    background-position: 0px 0px;
+
+	animation: animatedBackground 10s linear infinite;
+	-moz-animation: animatedBackground 10s linear infinite;
+	-webkit-animation: animatedBackground 10s linear infinite;
+	-ms-animation: animatedBackground 10s linear infinite;
+	-o-animation: animatedBackground 10s linear infinite;
+    background-image: url('../images/clients-cover.jpg');
+}
+
+
+@keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-moz-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-webkit-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-ms-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-o-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+/* End Fonts */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'GalanoGrotesque-Bold';
+    }
+    p {
+        font-family: 'Noto Serif';
+    }
+}
