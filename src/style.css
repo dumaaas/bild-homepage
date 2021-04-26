@@ -71,12 +71,25 @@
     src: url('../fonts/GalanoGrotesque-Regular/font.woff2') format('woff2'), url('../fonts/GalanoGrotesque-Regular/font.woff') format('woff');
 }
 
+.header-active {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
 .nilex-section {
     background-image: url('../images/nilex-cover.jpg');    
 }
 
 .galano-medium {
     font-family: 'GalanoGrotesque-Medium';
+}
+
+.noto-serif {
+    font-family: 'Noto Serif';
+}
+
+.roboto {
+    font-family: 'Roboto';
 }
 
 .background {

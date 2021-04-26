@@ -71,12 +71,25 @@
     src: url('../fonts/GalanoGrotesque-Regular/font.woff2') format('woff2'), url('../fonts/GalanoGrotesque-Regular/font.woff') format('woff');
 }
 
+.header-active {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
 .nilex-section {
     background-image: url('../images/nilex-cover.jpg');    
 }
 
 .galano-medium {
     font-family: 'GalanoGrotesque-Medium';
+}
+
+.noto-serif {
+    font-family: 'Noto Serif';
+}
+
+.roboto {
+    font-family: 'Roboto';
 }
 
 .background {
@@ -716,6 +729,12 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.mt-\[5px\]{
+    margin-top: 5px;
+}
+.mt-\[-1px\]{
+    margin-top: -1px;
+}
 .ml-\[17px\]{
     margin-left: 17px;
 }
@@ -785,11 +804,29 @@ p {
 .grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.flex-row{
+    flex-direction: row;
+}
 .flex-col{
     flex-direction: column;
 }
-.flex-row{
-    flex-direction: row;
+.justify-between{
+    justify-content: space-between;
+}
+.space-x-\[42px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(42px * var(--tw-space-x-reverse));
+    margin-left: calc(42px * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-\[17px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(17px * var(--tw-space-x-reverse));
+    margin-left: calc(17px * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-\[4px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4px * var(--tw-space-x-reverse));
+    margin-left: calc(4px * calc(1 - var(--tw-space-x-reverse)));
 }
 .bg-black{
     --tw-bg-opacity: 1;
@@ -823,8 +860,8 @@ p {
     padding-left: 30px;
     padding-right: 30px;
 }
-.pt-\[10px\]{
-    padding-top: 10px;
+.pt-\[32px\]{
+    padding-top: 32px;
 }
 .pt-\[140px\]{
     padding-top: 140px;
@@ -898,11 +935,17 @@ p {
 .pt-\[14\%\]{
     padding-top: 14%;
 }
+.text-right{
+    text-align: right;
+}
 .text-center{
     text-align: center;
 }
-.text-right{
-    text-align: right;
+.text-\[12px\]{
+    font-size: 12px;
+}
+.text-\[13px\]{
+    font-size: 13px;
 }
 .text-\[80px\]{
     font-size: 80px;
@@ -928,11 +971,17 @@ p {
 .text-\[16px\]{
     font-size: 16px;
 }
+.font-bold{
+    font-weight: 700;
+}
 .uppercase{
     text-transform: uppercase;
 }
 .italic{
     font-style: italic;
+}
+.leading-\[12px\]{
+    line-height: 12px;
 }
 .leading-\[97px\]{
     line-height: 97px;
@@ -945,6 +994,9 @@ p {
 }
 .leading-\[49px\]{
     line-height: 49px;
+}
+.tracking-\[1\.9px\]{
+    letter-spacing: 1.9px;
 }
 .text-white{
     --tw-text-opacity: 1;
