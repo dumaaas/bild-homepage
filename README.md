@@ -18,6 +18,12 @@ npm install
 // open index.html page
 ```
 
+## 🏃 Speedrun
+
+* header - 17 minutes
+* main - 2 hours and 30 minutes
+* section - TBD
+
 ## 📝 Text editor
 
 [Visual Studio Code](https://code.visualstudio.com/download)
