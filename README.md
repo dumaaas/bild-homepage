@@ -1,6 +1,6 @@
 # bild-homepage
 Speedrun building Bildstudio homepage with TailwindCSS + HTML...
-Finished in 2 hours and 30 minutes.
+Finished in 5 hours and 52 minutes.
 
 ## :man_technologist: How to install?
 
