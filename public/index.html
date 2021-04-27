@@ -8,17 +8,18 @@
     <title>Bild studio</title>
     <link rel="shortcut icon" href="./images/logo-bild.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
 <body>
     <!-- Space for header -->
-    <header class="mx-auto bg-black h-[90px] text-white">
+    <header class="mx-auto bg-black h-[90px] sm:h-[62px] text-white">
 
-        <div class="w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px] flex justify-between pt-[32px]">
+        <div class="max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px] flex justify-between pt-[32px] sm:pt-[20px]">
             <div>
                 <img src="images/logo-bild.webp" alt="">
             </div>
-            <div class="leading-[12px] mt-[5px] flex flex-row space-x-[42px]">
+            <div class="md:hidden sm:hidden leading-[12px] mt-[5px] flex flex-row space-x-[42px]">
                 <div class="leading-[12px] tracking-[1.9px] text-[12px] flex space-x-[17px]">
                     <a href="#" class="uppercase header-active">Projects</a>
                     <a href="#" class="uppercase">Services</a>
@@ -32,19 +33,22 @@
                     <a href="#" class="mt-[-1px] italic font-bold noto-serif">en</a>
                 </div>
             </div>
+            <div class="hidden sm:flex md:block mt-[-8px] ">
+                <i class="text-[30px] fas fa-bars"></i>
+            </div>
         </div>
     </header>
     <!-- Space for main content -->
     <main>
         <!-- Space for first section -->
         <section class="bg-black">
-            <div class="w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px]">
-                <h1 class="pt-[140px] md:pt-[80px] pb-[42px] text-[80px] md:text-[48px] text-white leading-[97px] md:leading-[58px] lg:w-[800px]">
+            <div class="max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px]">
+                <h1 class="pt-[140px] sm:pt-[81px] md:pt-[80px] pb-[42px] text-[80px] md:text-[48px] sm:text-[48px] text-white leading-[97px] md:leading-[58px] sm:leading-[58px] lg:w-[800px]">
                     <a class="cursor-pointer wavy-link">Building products.</a> <a
                         class="cursor-pointer wavy-link">Brands.</a> <a class="cursor-pointer wavy-link">All based on
                         facts.</a>
                 </h1>
-                <p class="pb-[157px] md:pb-[109px] text-[#ce9a64] text-[24px] md:text-[21px]">
+                <p class="pb-[157px] md:pb-[109px] sm:pb-[109px] text-[#ce9a64] text-[24px] md:text-[21px] sm:text-[21px]">
                     80+ people <span class="text-white">mastering</span> <span class="italic">design, development &
                         strategy</span> <span class="text-white">to drive growth.</span>
                 </p>
@@ -55,15 +59,16 @@
         </section>
         <!-- Space for second section -->
         <section class="background nilex-section">
-            <div class="w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px]">
-                <h2 class="ml-[17px] xl:pt-[211px] md:pt-[60px] pb-[6px] xl:text-[60px] text-[48px] leading-[72px]">
+            <div class="max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px]">
+                <img class="hidden sm:block nilex-mobile" src="images/nilex-mobile.jpg" alt="">
+                <h2 class="ml-[17px] sm:ml-0 xl:pt-[211px] md:pt-[60px] pb-[6px] sm:pb-0 xl:text-[60px] text-[48px] sm:text-[32px] leading-[72px] sm:leading-[56px] w-[1170px] lg:w-[970px] md:w-[750px] sm:w-auto">
                     Nilex
                 </h2>
-                <p class="ml-[17px] pb-[20px] text-[20px] w-[246px] leading-[47px]">
+                <p class="ml-[17px] sm:ml-0 pb-[20px] sm:pb-[14px] text-[20px] sm:text-[14px] w-[246px] leading-[47px] sm:w-[174px] sm:leading-[33px]">
                     Continuous ITSM development and support
                 </p>
                 <a
-                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] ml-[17px] text-[14px] bg-[#0D8A6D] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px]">
+                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] sm:mb-[16px] ml-[17px] sm:ml-0 text-[14px] sm:text-[12px] bg-[#0D8A6D] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px] sm:pt-[10px] sm:pb-[10px] px-[22px]">
                     READ FULL CASE STUDY
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-arrow-east">
                         <use xlink:href="#shape-arrow-east"></use>
@@ -78,15 +83,16 @@
         </section>
         <!-- Space for third section -->
         <section class="background telekom-section">
-            <div class="text-white w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px] text-right">
-                <h2 class="ml-[812px] lg:ml-[612px] md:ml-[393px] xl:pt-[175px] md:pt-[59px] pb-[6px] lg:pb-0 lg:text-[48px] md:text-[40px] w-[330px] xl:text-[60px] leading-[72px] lg:leading-[57px] md:leading-[54px] ">
+            <div class="text-white max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px] text-right sm:text-left">
+                <img class="hidden sm:block nilex-mobile" src="images/telekom-mobile.jpg" alt="">
+                <h2 class="ml-[812px] lg:ml-[612px] md:ml-[393px] sm:ml-0 xl:pt-[175px] md:pt-[59px] pb-[6px] lg:pb-0 lg:text-[48px] md:text-[40px] w-[330px] xl:text-[60px] sm:text-[32px] leading-[72px] sm:leading-[56px] lg:leading-[57px] md:leading-[54px] sm:w-auto">
                     Crnogorski Telekom
                 </h2>
-                <p class="pb-[72px] text-[20px] lg:text-[19px] leading-[47px] md:w-[252px] md:ml-[468px] md:text-[16px] md:leading-[25px] md:pb-[80px]">
+                <p class="pb-[72px] sm:pb-[14px] text-[20px] lg:text-[19px] sm:text-[14px] leading-[47px] sm:leading-[33px] md:w-[252px] md:ml-[468px] md:text-[16px] md:leading-[25px] md:pb-[80px]">
                     Custom built E-commerce web portal
                 </p>
                 <a
-                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] ml-[17px] text-[14px] bg-[#279FAF] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px]">
+                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] sm:mb-[16px] ml-[17px] sm:ml-0 text-[14px] sm:text-[12px]  bg-[#279FAF] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px] sm:pt-[10px] sm:pb-[10px] px-[22px]">
                     READ FULL CASE STUDY
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-arrow-east">
                         <use xlink:href="#shape-arrow-east"></use>
@@ -101,15 +107,16 @@
         </section>
         <!-- Space for fourth section -->
         <section class="background yoga-section">
-            <div class="w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px]">
-                <h2 class="ml-[17px] xl:pt-[234px] md:pt-[59px] pb-[6px] xl:text-[60px] text-[48px] leading-[72px]">
+            <div class="max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px]">
+                <img class="hidden sm:block nilex-mobile" src="images/yoga-mobile.jpg" alt="">
+                <h2 class="ml-[17px] sm:ml-0 xl:pt-[234px] md:pt-[59px] pb-[6px] xl:text-[60px] text-[48px] sm:text-[32px] leading-[72px] sm:leading-[56px] w-[1170px] lg:w-[970px] md:w-[750px] sm:w-auto">
                     Ekhart Yoga
                 </h2>
-                <p class="ml-[17px] pb-[25px] text-[20px] leading-[47px] md:text-[18px]">
+                <p class="ml-[17px] sm:ml-0 pb-[25px] sm:pb-[14px] text-[20px] sm:text-[14px] leading-[47px] sm:leading-[33px] md:text-[18px]">
                     Online video platform resurgence
                 </p>
                 <a
-                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] text-[14px] ml-[17px] bg-[#9ACECF] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px]">
+                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] sm:mb-[16px] text-[14px] sm:text-[12px]  ml-[17px] sm:ml-0 bg-[#9ACECF] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px] sm:pt-[10px] sm:pb-[10px] px-[22px]">
                     READ FULL CASE STUDY
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-arrow-east">
                         <use xlink:href="#shape-arrow-east"></use>
@@ -124,12 +131,12 @@
         </section>
         <!-- Space for fifth section -->
         <section class="background note-section">
-            <div class="w-[1170px] lg:w-[970px] md:w-[750px] text-[#CE9A64] mx-auto px-[15px] text-center">
-                <h2 class="xl:pt-[62px] md:pt-[60px] pb-[6px] xl:text-[60px] text-[48px]">These are just the basics</h2>
-                <a class="inline-block cursor-pointer hover:no-underline underline text-[20px] pb-[33px]">And there is
+            <div class="max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] text-[#CE9A64] mx-auto px-[15px] text-center">
+                <h2 class="xl:pt-[62px] md:pt-[60px] sm:pt-[30px] pb-[6px] xl:text-[60px] text-[48px] sm:text-[32px]">These are just the basics</h2>
+                <a class="inline-block cursor-pointer hover:no-underline underline text-[20px] sm:text-[14px] pb-[33px]">And there is
                     more to us :)</a> <br>
                 <a
-                    class="home-btns cursor-pointer inline-block xl:mb-[69px] md:mb-[64px] ml-[17px] text-[14px] bg-black text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px]">
+                    class="home-btns cursor-pointer inline-block xl:mb-[69px] md:mb-[64px] sm:mb-[32px] ml-[17px] text-[14px] sm:text-[12px] bg-black text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px] sm:pt-[10px] sm:pb-[10px] px-[22px]">
                     SEE OUR WORK
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-arrow-east">
                         <use xlink:href="#shape-arrow-east"></use>
@@ -144,53 +151,53 @@
         </section>
         <!-- Space for sixth section -->
         <section>
-            <div class="w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px]">
-                <h3 class="pt-[61px] text-[50px] lg:text-[40px] text-center"><span class="galano-medium">our</span> <span
+            <div class="max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px]">
+                <h3 class="pt-[61px] text-[50px] lg:text-[40px] sm:text-[32px] text-center"><span class="galano-medium">our</span> <span
                         class="underline cursor-pointer">services</span></h3>
-                <div class="pt-[60px] pb-[30px] grid grid-cols-2 md:grid-cols-1">
-                    <div class="flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px]">
-                        <div class="flex flex-row text-[42px] md:text-[32px] lg:text-[32px]">
-                            <h4 class="leading-[49px] lg:leading-[38px]  galano-medium">01</h4>
-                            <h4 class="leading-[49px] lg:leading-[38px] ml-[20px] w-[275px] pb-[36px] md:w-full">Full Cycle Development</h4>
+                <div class="pt-[60px] pb-[30px] grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+                    <div class="flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px] sm:pb-[15px] sm:pl-[15px] sm:pt-[7px]">
+                        <div class="flex flex-row text-[42px] md:text-[32px] sm:text-[22px] lg:text-[32px]">
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] galano-medium">01</h4>
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] ml-[20px] w-[275px] pb-[36px] sm:pb-[22px] md:w-full">Full Cycle Development</h4>
                         </div>
                         <div>
-                            <p class="w-[380px] text-[16px] text-[#5c5c5c]  md:w-full">
+                            <p class="w-[380px] text-[16px] sm:text-[14px] text-[#5c5c5c]  md:w-full sm:w-full">
                                 Software engineering through agile methodology, incorporating the latest industry
                                 trends.
                             </p>
                         </div>
                     </div>
-                    <div class="md:mt-[30px] md:ml-0 ml-[30px] flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px]">
-                        <div class="flex flex-row text-[42px] md:text-[32px] lg:text-[32px]">
-                            <h4 class="leading-[49px] lg:leading-[38px]   galano-medium">02</h4>
-                            <h4 class="leading-[49px] lg:leading-[38px]  ml-[20px] pb-[36px]  md:w-full">
+                    <div class="md:mt-[30px] sm:mt-[15px] sm:ml-0 md:ml-0 ml-[30px] flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px] sm:pb-[15px] sm:pl-[15px] sm:pt-[7px]">
+                        <div class="flex flex-row text-[42px] md:text-[32px] sm:text-[22px] lg:text-[32px]">
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] galano-medium">02</h4>
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] ml-[20px] pb-[36px] sm:pb-[22px] md:w-full">
                                 Product Design
                             </h4>
                         </div>
                         <div>
-                            <p class=" text-[16px] text-[#5c5c5c] md:w-full">
+                            <p class=" text-[16px] sm:text-[14px] text-[#5c5c5c] md:w-full sm:w-full">
                                 Continuous analysis and data collection towards UX&UI practices.
                             </p>
                         </div>
                     </div>
-                    <div class="mt-[30px] flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px]">
-                        <div class="flex flex-row text-[42px] md:text-[32px] lg:text-[32px]">
-                            <h4 class="leading-[49px] lg:leading-[38px]  galano-medium">03</h4>
-                            <h4 class="leading-[49px] lg:leading-[38px]  ml-[20px] pb-[36px]  md:w-full">Design & Branding</h4>
+                    <div class="mt-[30px] sm:mt-[15px] flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px] sm:pb-[15px] sm:pl-[15px] sm:pt-[7px]">
+                        <div class="flex flex-row text-[42px] md:text-[32px] sm:text-[22px] lg:text-[32px]">
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] galano-medium">03</h4>
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] ml-[20px] pb-[36px] sm:pb-[22px] md:w-full">Design & Branding</h4>
                         </div>
                         <div>
-                            <p class="max-w-[450px] text-[16px] text-[#5c5c5c] md:w-full">
+                            <p class="max-w-[450px] text-[16px] sm:text-[14px] text-[#5c5c5c] md:w-full sm:w-full">
                                 Visual identity and logotype, brand application, animation, video.
                             </p>
                         </div>
                     </div>
-                    <div class="mt-[30px] md:ml-0 ml-[30px] flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px]">
-                        <div class="flex flex-row text-[42px] md:text-[32px] lg:text-[32px]">
-                            <h4 class="leading-[49px] lg:leading-[38px]  galano-medium">04</h4>
-                            <h4 class="leading-[49px] lg:leading-[38px]  ml-[20px] pb-[36px] md:w-full">Strategy & Digital Transformation</h4>
+                    <div class="mt-[30px] sm:mt-[15px] sm:ml-0 md:ml-0 ml-[30px] flex flex-col bg-[#F9F9F9] pb-[40px] pl-[40px] pt-[17px] sm:pb-[15px] sm:pl-[15px] sm:pt-[7px]">
+                        <div class="flex flex-row text-[42px] md:text-[32px] sm:text-[22px] lg:text-[32px]">
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] galano-medium">04</h4>
+                            <h4 class="leading-[49px] lg:leading-[38px] sm:leading-[25px] ml-[20px] pb-[36px] sm:pb-[22px] md:w-full">Strategy & Digital Transformation</h4>
                         </div>
                         <div>
-                            <p class=" text-[16px] text-[#5c5c5c]  md:w-full">
+                            <p class="text-[16px] sm:text-[14px] text-[#5c5c5c] md:w-full sm:w-full">
                                 Setting the foundation for scaling businesses.
                             </p>
                         </div>
@@ -200,11 +207,11 @@
         </section>
         <!-- Space for seventh section -->
         <section class="background client-section">
-            <div class="w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px] text-center">
-                <h2 class="xl:mt-[261px] xl:text-[60px] md:w-[392px] md:mt-[108px] md:mx-auto text-[48px] leading-[72px] pb-[32px]">They trust us, so should <span
-                        class="block md:inline-block">you!</span></h2>
+            <div class="max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px] text-center">
+                <h2 class="xl:mt-[261px] xl:text-[60px] md:w-[392px] md:mt-[108px] sm:mt-[161px] md:mx-auto text-[48px] sm:text-[32px] leading-[72px] sm:leading-[28px] pb-[32px]">They trust us, so should <span
+                        class="block md:inline-block sm:inline-block">you!</span></h2>
                 <a
-                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] ml-[17px] lg:text-[14px] bg-[#CE9A64] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px]">
+                    class="home-btns cursor-pointer inline-block xl:mb-[192px] md:mb-[64px] sm:mb-[161px] ml-[17px] lg:text-[14px] sm:text-[12px] bg-[#CE9A64] text-white px-[30px] pt-[14px] pb-[13px] xl:mb-[239px] sm:pt-[10px] sm:pb-[10px] px-[22px]">
                     BE ONE OF THEM
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-arrow-east">
                         <use xlink:href="#shape-arrow-east"></use>
@@ -220,14 +227,14 @@
     </main>
     <!-- Space for footer section -->
     <footer class="mx-auto text-white bg-black">
-        <div class="pt-[63px] pb-[20px] w-[1170px] lg:w-[970px] md:w-[750px] mx-auto px-[15px] text-center">
-            <span class="text-[47px] md:text-[30px] galano-medium">Let's talk</span><br>
-            <a class="mt-[37px] md:mt-[17px] inline-block text-[124px] md:text-[42px] border-b-[12px] md:border-b-[4px] md:leading-[30px] border-white leading-[94px]">Work with us.</a>
-            <div class="flex justify-between mt-[139px] md:mt-[50px]">
+        <div class="pt-[63px] pb-[20px] max-w-[1170px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] mx-auto px-[15px] text-center">
+            <span class="text-[47px] md:text-[30px] sm:text-[30px] galano-medium">Let's talk</span><br>
+            <a class="mt-[37px] md:mt-[17px] sm:mt-[17px] inline-block text-[124px] md:text-[42px] sm:text-[42px] border-b-[12px] md:border-b-[4px] md:leading-[30px] sm:border-b-[4px] sm:leading-[30px] border-white leading-[94px]">Work with us.</a>
+            <div class="flex justify-between mt-[139px] md:mt-[50px] sm:mt-[50px]">
                 <div class="flex flex-row">
                     <div class="site-footer__logo">
                     </div>
-                    <div class="md:hidden tracking-[2px] text-[12px] flex space-x-[17px] ml-[8px]">
+                    <div class="md:hidden sm:hidden tracking-[2px] text-[12px] flex space-x-[17px] ml-[8px]">
                         <a href="#" class="uppercase cursor-pointer">Clients</a>
                         <a href="#" class="uppercase cursor-pointer">Contact</a>
                     </div>

@@ -1,6 +1,7 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
@@ -8,11 +9,15 @@
     font-display: swap;
     src: url('../fonts/roboto/roboto.eot');
     /* IE9 Compat Modes */
-    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto/roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/roboto/roboto.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/roboto/roboto.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/roboto/roboto.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/roboto/roboto.svg#Roboto') format('svg');
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto/roboto.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/roboto/roboto.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/roboto/roboto.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/roboto/roboto.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/roboto/roboto.svg#Roboto') format('svg');
     /* Legacy iOS */
 }
 
@@ -26,11 +31,15 @@
     font-display: swap;
     src: url('../fonts/noto-sans-regular.eot');
     /* IE9 Compat Modes */
-    src: local('Noto Sans'), local('NotoSans'), url('../fonts/noto-sans/noto-sans-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/noto-sans/noto-sans-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/noto-sans/noto-sans-regular.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/noto-sans/noto-sans-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/noto-sans/noto-sans-regular.svg#NotoSans') format('svg');
+    src: local('Noto Sans'), local('NotoSans'), url('../fonts/noto-sans/noto-sans-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/noto-sans/noto-sans-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/noto-sans/noto-sans-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/noto-sans/noto-sans-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/noto-sans/noto-sans-regular.svg#NotoSans') format('svg');
     /* Legacy iOS */
 }
 
@@ -44,15 +53,20 @@
     font-display: swap;
     src: url('../fonts/noto-sans-700.eot');
     /* IE9 Compat Modes */
-    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('../fonts/noto-sans-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/noto-sans-700.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/noto-sans-700.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/noto-sans-700.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/noto-sans-700.svg#NotoSans') format('svg');
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('../fonts/noto-sans-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/noto-sans-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/noto-sans-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/noto-sans-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/noto-sans-700.svg#NotoSans') format('svg');
     /* Legacy iOS */
 }
 
 @import url("//hello.myfonts.net/count/3ce04c");
+
 @font-face {
     font-family: 'GalanoGrotesque-Bold';
     font-display: swap;
@@ -113,8 +127,38 @@
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .nilex-section {
+        background-image: none !important;
+        background: #E0F5EE;
+    }
+
+    .telekom-section {
+        background-image: none !important;
+        background: #E30074;
+    }
+
+    .yoga-section {
+        background-image: none !important;
+        background: #FFFFFF;
+    }
+
+
+    .svg-icon {
+        margin-top: -2px !important;
+    }
+
+}
+
+.nilex-mobile {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .nilex-section {
-    background-image: url('../images/nilex-cover.jpg');    
+    background-image: url('../images/nilex-cover.jpg');
 }
 
 .telekom-section {
@@ -124,17 +168,18 @@
 .yoga-section {
     background-image: url('../images/yoga-cover.jpg');
 }
+
 .note-section {
     background-image: url('../images/note-cover.jpg');
 }
 
 .client-section {
     background-position: 0px 0px;
-	animation: animatedBackground 10s linear infinite;
-	-moz-animation: animatedBackground 10s linear infinite;
-	-webkit-animation: animatedBackground 10s linear infinite;
-	-ms-animation: animatedBackground 10s linear infinite;
-	-o-animation: animatedBackground 10s linear infinite;
+    animation: animatedBackground 10s linear infinite;
+    -moz-animation: animatedBackground 10s linear infinite;
+    -webkit-animation: animatedBackground 10s linear infinite;
+    -ms-animation: animatedBackground 10s linear infinite;
+    -o-animation: animatedBackground 10s linear infinite;
     background-image: url('../images/clients-cover.jpg');
 }
 
@@ -189,13 +234,25 @@
 
 
 @keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -300px 0;
+    }
 }
+
 @-webkit-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -300px 0;
+    }
 }
+
 /* End Fonts */
 
 /* ! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
@@ -778,6 +835,9 @@ p {
 .mt-\[-1px\]{
     margin-top: -1px;
 }
+.mt-\[-8px\]{
+    margin-top: -8px;
+}
 .ml-\[17px\]{
     margin-left: 17px;
 }
@@ -817,6 +877,9 @@ p {
 .grid{
     display: grid;
 }
+.hidden{
+    display: none;
+}
 .h-\[90px\]{
     height: 90px;
 }
@@ -834,6 +897,9 @@ p {
 }
 .w-\[380px\]{
     width: 380px;
+}
+.max-w-\[1170px\]{
+    max-width: 1170px;
 }
 .max-w-\[450px\]{
     max-width: 450px;
@@ -915,6 +981,10 @@ p {
     padding-left: 30px;
     padding-right: 30px;
 }
+.px-\[22px\]{
+    padding-left: 22px;
+    padding-right: 22px;
+}
 .pt-\[32px\]{
     padding-top: 32px;
 }
@@ -989,6 +1059,9 @@ p {
 }
 .text-\[13px\]{
     font-size: 13px;
+}
+.text-\[30px\]{
+    font-size: 30px;
 }
 .text-\[80px\]{
     font-size: 80px;
@@ -1088,171 +1161,423 @@ p {
 .hover\:no-underline:hover{
     text-decoration: none;
 }
+@media (max-width: 767px){
+
+    .sm\:ml-0{
+        margin-left: 0px;
+    }
+
+    .sm\:mb-\[16px\]{
+        margin-bottom: 16px;
+    }
+
+    .sm\:mb-\[32px\]{
+        margin-bottom: 32px;
+    }
+
+    .sm\:mt-\[15px\]{
+        margin-top: 15px;
+    }
+
+    .sm\:mt-\[161px\]{
+        margin-top: 161px;
+    }
+
+    .sm\:mb-\[161px\]{
+        margin-bottom: 161px;
+    }
+
+    .sm\:mt-\[17px\]{
+        margin-top: 17px;
+    }
+
+    .sm\:mt-\[50px\]{
+        margin-top: 50px;
+    }
+
+    .sm\:block{
+        display: block;
+    }
+
+    .sm\:inline-block{
+        display: inline-block;
+    }
+
+    .sm\:flex{
+        display: flex;
+    }
+
+    .sm\:hidden{
+        display: none;
+    }
+
+    .sm\:h-\[62px\]{
+        height: 62px;
+    }
+
+    .sm\:w-auto{
+        width: auto;
+    }
+
+    .sm\:w-\[174px\]{
+        width: 174px;
+    }
+
+    .sm\:w-full{
+        width: 100%;
+    }
+
+    .sm\:max-w-\[767px\]{
+        max-width: 767px;
+    }
+
+    .sm\:grid-cols-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .sm\:border-b-\[4px\]{
+        border-bottom-width: 4px;
+    }
+
+    .sm\:pt-\[20px\]{
+        padding-top: 20px;
+    }
+
+    .sm\:pt-\[81px\]{
+        padding-top: 81px;
+    }
+
+    .sm\:pb-\[109px\]{
+        padding-bottom: 109px;
+    }
+
+    .sm\:pb-0{
+        padding-bottom: 0px;
+    }
+
+    .sm\:pb-\[14px\]{
+        padding-bottom: 14px;
+    }
+
+    .sm\:pt-\[10px\]{
+        padding-top: 10px;
+    }
+
+    .sm\:pb-\[10px\]{
+        padding-bottom: 10px;
+    }
+
+    .sm\:pt-\[30px\]{
+        padding-top: 30px;
+    }
+
+    .sm\:pb-\[15px\]{
+        padding-bottom: 15px;
+    }
+
+    .sm\:pl-\[15px\]{
+        padding-left: 15px;
+    }
+
+    .sm\:pt-\[7px\]{
+        padding-top: 7px;
+    }
+
+    .sm\:pb-\[22px\]{
+        padding-bottom: 22px;
+    }
+
+    .sm\:text-left{
+        text-align: left;
+    }
+
+    .sm\:text-\[48px\]{
+        font-size: 48px;
+    }
+
+    .sm\:text-\[21px\]{
+        font-size: 21px;
+    }
+
+    .sm\:text-\[32px\]{
+        font-size: 32px;
+    }
+
+    .sm\:text-\[14px\]{
+        font-size: 14px;
+    }
+
+    .sm\:text-\[12px\]{
+        font-size: 12px;
+    }
+
+    .sm\:text-\[22px\]{
+        font-size: 22px;
+    }
+
+    .sm\:text-\[30px\]{
+        font-size: 30px;
+    }
+
+    .sm\:text-\[42px\]{
+        font-size: 42px;
+    }
+
+    .sm\:leading-\[58px\]{
+        line-height: 58px;
+    }
+
+    .sm\:leading-\[56px\]{
+        line-height: 56px;
+    }
+
+    .sm\:leading-\[33px\]{
+        line-height: 33px;
+    }
+
+    .sm\:leading-\[25px\]{
+        line-height: 25px;
+    }
+
+    .sm\:leading-\[28px\]{
+        line-height: 28px;
+    }
+
+    .sm\:leading-\[30px\]{
+        line-height: 30px;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px){
+
     .md\:mx-auto{
         margin-left: auto;
         margin-right: auto;
     }
+
     .md\:mb-\[64px\]{
         margin-bottom: 64px;
     }
+
     .md\:ml-\[393px\]{
         margin-left: 393px;
     }
+
     .md\:ml-\[468px\]{
         margin-left: 468px;
     }
+
     .md\:mt-\[30px\]{
         margin-top: 30px;
     }
+
     .md\:ml-0{
         margin-left: 0px;
     }
+
     .md\:mt-\[108px\]{
         margin-top: 108px;
     }
+
     .md\:mt-\[17px\]{
         margin-top: 17px;
     }
+
     .md\:mt-\[50px\]{
         margin-top: 50px;
     }
+
+    .md\:block{
+        display: block;
+    }
+
     .md\:inline-block{
         display: inline-block;
     }
+
     .md\:hidden{
         display: none;
     }
+
     .md\:w-\[750px\]{
         width: 750px;
     }
+
     .md\:w-\[252px\]{
         width: 252px;
     }
+
     .md\:w-full{
         width: 100%;
     }
+
     .md\:w-\[392px\]{
         width: 392px;
     }
+
+    .md\:max-w-\[750px\]{
+        max-width: 750px;
+    }
+
     .md\:grid-cols-1{
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
     .md\:border-b-\[4px\]{
         border-bottom-width: 4px;
     }
+
     .md\:pt-\[80px\]{
         padding-top: 80px;
     }
+
     .md\:pb-\[109px\]{
         padding-bottom: 109px;
     }
+
     .md\:pt-\[60px\]{
         padding-top: 60px;
     }
+
     .md\:pt-\[59px\]{
         padding-top: 59px;
     }
+
     .md\:pb-\[80px\]{
         padding-bottom: 80px;
     }
+
     .md\:text-\[48px\]{
         font-size: 48px;
     }
+
     .md\:text-\[21px\]{
         font-size: 21px;
     }
+
     .md\:text-\[40px\]{
         font-size: 40px;
     }
+
     .md\:text-\[16px\]{
         font-size: 16px;
     }
+
     .md\:text-\[18px\]{
         font-size: 18px;
     }
+
     .md\:text-\[32px\]{
         font-size: 32px;
     }
+
     .md\:text-\[30px\]{
         font-size: 30px;
     }
+
     .md\:text-\[42px\]{
         font-size: 42px;
     }
+
     .md\:leading-\[58px\]{
         line-height: 58px;
     }
+
     .md\:leading-\[54px\]{
         line-height: 54px;
     }
+
     .md\:leading-\[25px\]{
         line-height: 25px;
     }
+
     .md\:leading-\[30px\]{
         line-height: 30px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
+
     .lg\:ml-\[612px\]{
         margin-left: 612px;
     }
-    .lg\:w-\[970px\]{
-        width: 970px;
-    }
+
     .lg\:w-\[800px\]{
         width: 800px;
     }
+
+    .lg\:w-\[970px\]{
+        width: 970px;
+    }
+
+    .lg\:max-w-\[970px\]{
+        max-width: 970px;
+    }
+
     .lg\:pb-0{
         padding-bottom: 0px;
     }
+
     .lg\:text-\[48px\]{
         font-size: 48px;
     }
+
     .lg\:text-\[19px\]{
         font-size: 19px;
     }
+
     .lg\:text-\[40px\]{
         font-size: 40px;
     }
+
     .lg\:text-\[32px\]{
         font-size: 32px;
     }
+
     .lg\:text-\[14px\]{
         font-size: 14px;
     }
+
     .lg\:leading-\[57px\]{
         line-height: 57px;
     }
+
     .lg\:leading-\[38px\]{
         line-height: 38px;
     }
 }
 @media (min-width: 1200px){
+
     .xl\:mb-\[192px\]{
         margin-bottom: 192px;
     }
+
     .xl\:mb-\[239px\]{
         margin-bottom: 239px;
     }
+
     .xl\:mb-\[69px\]{
         margin-bottom: 69px;
     }
+
     .xl\:mt-\[261px\]{
         margin-top: 261px;
     }
+
     .xl\:pt-\[211px\]{
         padding-top: 211px;
     }
+
     .xl\:pt-\[175px\]{
         padding-top: 175px;
     }
+
     .xl\:pt-\[234px\]{
         padding-top: 234px;
     }
+
     .xl\:pt-\[62px\]{
         padding-top: 62px;
     }
+
     .xl\:text-\[60px\]{
         font-size: 60px;
     }
